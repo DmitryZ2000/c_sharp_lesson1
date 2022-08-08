@@ -20,7 +20,28 @@ void PrintArray(int[] col)
     }
 }
 
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1;  //Если вернется -1 - значит искомого элемента нет в массиве.
+    while (index < count)
+    {
+        if (collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+
+
 int [] array = new int[10]; //создать новый массив в котором будет 10 элементов. По умолчанию там нули.
 FillArray(array);
 PrintArray(array);
+Console.WriteLine();
+int pos = IndexOf(array, 9);
+Console.WriteLine(pos);
  
