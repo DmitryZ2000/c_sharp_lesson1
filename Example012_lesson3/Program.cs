@@ -44,3 +44,16 @@ string Method4(int count, string txt)
 }
 string res = Method4(10, "abc ");
 Console.WriteLine(res);
+
+string Method41(int count, string txt)
+{
+    string result = String.Empty;
+    for (int i = 0; i < count; i++)
+        {
+            result = result + txt;
+        }
+    return result;
+}
+
+string res1 = Method4(10, "BMW ");
+Console.WriteLine(res1);
