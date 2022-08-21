@@ -1,5 +1,5 @@
 ﻿string[,] mytable = new string[2, 5];
-//2 строки (rows) и 5 столбцоы (column)
+//2 строки (rows) и 5 столбцов (column)
 //mytable[0,0], mytable[0,1] mytable[0,2], mytable[0,3], mytable[0,4]
 //mytable[1,0], mytable[1,1] mytable[1,2], mytable[1,3], mytable[1,4]
 mytable[1, 2] = "слово";
