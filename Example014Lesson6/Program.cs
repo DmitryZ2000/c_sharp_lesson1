@@ -7,6 +7,7 @@ Console.WriteLine(text);
 var data = text.Split(" ")
                 .Select(item => item.Split(','))
                 .Select(e => (x: int.Parse(e[0]), y: int.Parse(e[1])))
+                .Where(e=> e.x%2 ==0) //Увеличиваем только четные координаты
                 .Select(point => (point.x*10,point.y))
                 .ToArray();
 
